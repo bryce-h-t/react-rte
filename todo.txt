@@ -1,0 +1,10 @@
+- [x] Test props validation and default behavior (children, className, focusOnClick, formSubmit, isDisabled, onMouseDown)
+- [x] Test className concatenation with styles.root
+- [x] Test focusOnClick=false behavior and event prevention
+- [x] Test focusOnClick=true behavior (default case)
+- [x] Test formSubmit=true sets type="submit"
+- [x] Test formSubmit=false sets type="button" (default case)
+- [x] Test isDisabled prop properly disables the button
+- [x] Test onMouseDown event handler is called when provided
+- [x] Test onMouseDown event handler is not called when button is disabled
+- [x] Test _onMouseDownPreventDefault properly prevents default and calls provided onMouseDown
