@@ -12,7 +12,7 @@
     "prepublish": "npm run build",
     "start": "webpack-dev-server --content-base assets/",
     "test": "npm run lint && npm run typecheck && npm run test-src",
-    "test-src": "mocha \"src/**/__tests__/*.js\""
+    "test-src": "nyc --reporter=text mocha \"src/**/__tests__/*.js\""
   },
   "dependencies": {
     "class-autobind": "^0.1.4",
@@ -47,12 +47,15 @@
     "eslint-plugin-react": "^6.5.0",
     "expect": "^1.20.2",
     "flow-bin": "^0.32.0",
+    "jsdom": "^25.0.1",
+    "jsdom-global": "^3.0.2",
     "mocha": "^3.1.2",
     "nyc": "^17.1.0",
     "raw-loader": "^0.5.1",
     "react": "^15.7.0",
     "react-addons-test-utils": "^15.0.2",
     "react-dom": "^15.7.0",
+    "react-test-renderer": "^15.7.0",
     "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.3",
